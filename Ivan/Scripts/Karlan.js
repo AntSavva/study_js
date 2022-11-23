@@ -5,7 +5,7 @@ let filmGrade = prompt("На сколько оцените его?");
 const personalMovieDB = {
   count: numberOfFilms,
   movies : {
-        lastFilmAndGrade : lastFilm,filmGrade
+        lastFilmAndGrade : (`${lastFilm} : ${filmGrade}`)
         
   },
   actors :{
@@ -14,4 +14,4 @@ const personalMovieDB = {
   genres: [],
   privat: false,
 }
-console.log("personalMovieDB.movies")
+console.log(personalMovieDB.movies)

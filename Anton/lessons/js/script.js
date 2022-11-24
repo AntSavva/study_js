@@ -23,13 +23,30 @@
 // console.log(answer);
 // console.log(typeof(answer));  // Узнать тип данных переменной
 
-const massive = [];
+// const massive = [];
 
 
 
-massive[0] = prompt("Как Ваше имя?", '');
-massive[1] = prompt("Ваша фамилия?");
-massive[2] = prompt("Ваш возраст?");
+// massive[0] = prompt("Как Ваше имя?", '');
+// massive[1] = prompt("Ваша фамилия?");
+// massive[2] = prompt("Ваш возраст?");
 
-document.write(massive);
+// document.write(massive);
 
+// const category = 'play';
+
+// console.log(`https://someurl.com/${category}`);
+
+console.log("Привет" + " мир");
+console.log(5 + +"5");
+
+let pay = 5,
+    payd = 10;
+
+pay++;
+payd--;
+
+console.log(pay, payd);
+
+const del = 9 % 2;
+console.log(del);

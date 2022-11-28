@@ -34,10 +34,20 @@ for (let i = 0; i < numberOfFilms; i++){
 
 }
 personalMovieDB.count = numberOfFilms;
-for(let i = 0;i < numberOfFilms; i++){
+
 personalMovieDB.movies[lastFilm] = lastFilm;
 personalMovieDB.movies[filmGrade] = filmGrade;
 
-}
 console.log(personalMovieDB);
+switch(true){
+case (personalMovieDB.count <= 10): 
+  alert("просмотренно мало фильмов");
+  break;
+case (personalMovieDB.count > 10 && personalMovieDB.count< 30):
+  alert("вы классический зритель");
+  break;
+default: alert("вы киноман");
+
+
+}
 

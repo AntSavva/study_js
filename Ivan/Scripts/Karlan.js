@@ -9,11 +9,30 @@ const personalMovieDB = {
   genres: [],
   privat: false
 };
-
-do{
-numberOfFilms = prompt("сколько фильмов вы посмотрели за последнее время?");
+function start (){
+ 
+  do{
+    numberOfFilms = prompt("сколько фильмов вы посмотрели за последнее время?");
+    }
+    while(numberOfFilms == null || numberOfFilms == 0 || isNaN(numberOfFilms));
+  return numberOfFilms;
 }
-while(numberOfFilms == null || numberOfFilms == 0);
+
+function showMyDB(DB){
+  if (DB.privat == false)
+  {
+    console.log(DB);
+  }
+
+}
+function writeYourGeners(DB)
+{
+  for(let i = 0; i <3; i++)
+  {
+    DB.genres[i]=prompt("ваш любимый жанр под номером ${}");
+  }
+}
+numberOfFilms = start();
 
 for (let i = 0; i < numberOfFilms; i++){
   lastFilm = prompt("назовите эти фильмы");
@@ -38,7 +57,8 @@ personalMovieDB.count = numberOfFilms;
 personalMovieDB.movies[lastFilm] = lastFilm;
 personalMovieDB.movies[filmGrade] = filmGrade;
 
-console.log(personalMovieDB);
+showMyDB(personalMovieDB);
+writeYourGeners(personalMovieDB);
 switch(true){
 case (personalMovieDB.count <= 10): 
   alert("просмотренно мало фильмов");

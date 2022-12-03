@@ -25,6 +25,10 @@ console.log(calc(5, 12));
 const str = "test";
 const arr =  [1, 2, 4];
 
-console.log(arr.length);
+console.log(arr.includes(1));
 
 document.write(str.toUpperCase());
+
+let num_random = Math.random();
+
+console.log(Math.round(num_random));

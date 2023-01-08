@@ -1,0 +1,113 @@
+.header{
+    background-color: black;
+    color: white;
+    height: 80px;
+    
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header_menu{
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    
+    align-items: center;
+    
+}
+
+.main{
+    background: url('img/1.jpg') no-repeat center;
+    height: 800px;
+    color: white;
+}
+
+.content__row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    
+}
+
+.timer{
+    background-color: rgb(247, 238, 238);
+}
+
+.timer__row{
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.timer__title{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.timer__description{
+    font-size: 32px;
+}
+
+.timer__time{
+    display: flex;
+}
+
+.timer__day{
+    border: 3px solid black;
+    margin: 0 20px 0 0;
+    height: 120px;
+    width: 120px;
+    box-shadow: 0px 0px 10px 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer__day{
+    font-size: 56px;
+    font-weight: 700;
+
+}
+
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0,0,0); /* Цвет запасной вариант */
+    background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
+  }
+  
+  /* Модальное содержание/коробка */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% сверху и по центру */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
+  }
+  
+  /* Кнопка закрытия */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
